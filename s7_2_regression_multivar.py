@@ -1,4 +1,3 @@
-"""Раздел 7.2. Многомерный регрессор: линейный и полиномиальный."""
 import numpy as np
 from sklearn import linear_model
 import sklearn.metrics as sm
