@@ -1,4 +1,3 @@
-"""Раздел 5. Матрица неточностей."""
 import numpy as np
 import matplotlib.pyplot as plt
 from sklearn.metrics import confusion_matrix, classification_report
@@ -18,7 +17,6 @@ plt.xticks(ticks, ticks)
 plt.yticks(ticks, ticks)
 plt.ylabel('True labels')
 plt.xlabel('Predicted labels')
-# Подписи значений в ячейках — для читаемости в отчёте
 for i in range(5):
     for j in range(5):
         v = confusion_mat[i, j]
