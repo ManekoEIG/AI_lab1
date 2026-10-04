@@ -1,14 +1,9 @@
-"""Раздел 4. Наивный байесовский классификатор.
-
-Модуль sklearn.cross_validation удалён в sklearn 0.20; его функции
-теперь находятся в sklearn.model_selection.
-"""
 import numpy as np
 from sklearn.naive_bayes import GaussianNB
 from sklearn.model_selection import train_test_split, cross_val_score
 from utilities import visualize_classifier
 
-input_file = 'data_multivar_nb.txt'
+input_file = 'data_multivar_nb.txt' 
 data = np.loadtxt(input_file, delimiter=',')
 X, y = data[:, :-1], data[:, -1]
 print("Data shape:", X.shape, "classes:", np.unique(y))
