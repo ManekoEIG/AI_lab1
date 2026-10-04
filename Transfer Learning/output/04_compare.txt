@@ -1,0 +1,20 @@
+strategy                                        Acc,%     Prec,%    Rec,%     F1,%  errors   trainable   time,s
+Feature Extraction                              93.58      93.58    93.58    93.57     321      12,810       25
+Fine-tuning (blocks[5..6], lr=1e-4, 8 ep.)      96.96      96.98    96.96    96.96     152   3,168,550     2024
+Fine-tuning (blocks[6], lr=1e-4, 4 ep.)         95.50      95.51    95.50    95.50     225   1,142,202      358
+Fine-tuning (blocks[5..6], lr=1e-3, 3 ep.)      97.72      97.73    97.72    97.72     114   3,168,550      627
+
+Error reduction FE -> FT: 321 -> 152 (52.6% fewer errors)
+
+Per-class recall, %:
+class                       FE      FT   delta
+AnnualCrop                95.0    97.8    +2.8
+Forest                    98.2    99.6    +1.4
+HerbaceousVegetation      93.6    97.0    +3.4
+Highway                   89.0    95.0    +6.0
+Industrial                95.2    98.0    +2.8
+Pasture                   91.4    94.8    +3.4
+PermanentCrop             89.0    93.6    +4.6
+Residential               97.6    99.0    +1.4
+River                     89.6    95.4    +5.8
+SeaLake                   97.2    99.4    +2.2

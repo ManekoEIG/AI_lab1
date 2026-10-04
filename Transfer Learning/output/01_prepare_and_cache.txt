@@ -1,0 +1,18 @@
+Classes: ['AnnualCrop', 'Forest', 'HerbaceousVegetation', 'Highway', 'Industrial', 'Pasture', 'PermanentCrop', 'Residential', 'River', 'SeaLake']
+train=18700  val=3300  test=5000
+class                   train   val  test
+AnnualCrop               2125   375   500
+Forest                   2125   375   500
+HerbaceousVegetation     2125   375   500
+Highway                  1700   300   500
+Industrial               1700   300   500
+Pasture                  1275   225   500
+PermanentCrop            1700   300   500
+Residential              2125   375   500
+River                    1700   300   500
+SeaLake                  2125   375   500
+  encoded 3300 imgs (flip=False) in 38s
+  encoded 5000 imgs (flip=False) in 57s
+  encoded 18700 imgs (flip=False) in 233s
+  encoded 18700 imgs (flip=True) in 218s
+Cached feature map shape: (112, 8, 8)

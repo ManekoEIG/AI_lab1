@@ -1,0 +1,42 @@
+Unfrozen: top1 | lr=0.0001 | epochs=4
+Total params: 3,168,550 | trainable: 1,142,202
+val_acc before fine-tuning: 0.9564
+epoch  1  train_loss 0.0698  train_acc 0.9759  val_loss 0.1374  val_acc 0.9579  (101s)
+epoch  2  train_loss 0.0274  train_acc 0.9910  val_loss 0.1326  val_acc 0.9645  (188s)
+epoch  3  train_loss 0.0138  train_acc 0.9962  val_loss 0.1329  val_acc 0.9664  (271s)
+epoch  4  train_loss 0.0092  train_acc 0.9980  val_loss 0.1324  val_acc 0.9679  (358s)
+Best val_acc 0.9679 at epoch 4; training time 358s
+
+=== Fine-tuning (только blocks[6]): test set (5000 images) ===
+Accuracy  = 95.50%
+Precision = 95.51% (macro)
+Recall    = 95.50% (macro)
+F1        = 95.50% (macro)
+                      precision    recall  f1-score   support
+
+          AnnualCrop     0.9411    0.9580    0.9495       500
+              Forest     0.9724    0.9880    0.9802       500
+HerbaceousVegetation     0.9314    0.9500    0.9406       500
+             Highway     0.9307    0.9400    0.9353       500
+          Industrial     0.9621    0.9640    0.9630       500
+             Pasture     0.9647    0.9280    0.9460       500
+       PermanentCrop     0.9350    0.9200    0.9274       500
+         Residential     0.9685    0.9840    0.9762       500
+               River     0.9510    0.9320    0.9414       500
+             SeaLake     0.9940    0.9860    0.9900       500
+
+            accuracy                         0.9550      5000
+           macro avg     0.9551    0.9550    0.9550      5000
+        weighted avg     0.9551    0.9550    0.9550      5000
+
+Confusion matrix:
+ [[479   1   0   2   1   3  12   0   1   1]
+ [  1 494   3   0   0   1   0   0   0   1]
+ [  1   5 475   1   0   8   9   1   0   0]
+ [  4   1   1 470   6   1   3   1  13   0]
+ [  1   0   0   5 482   0   2   9   1   0]
+ [  7   2  16   1   0 464   4   0   6   0]
+ [ 11   2  15   2   3   2 460   5   0   0]
+ [  0   1   0   1   6   0   0 492   0   0]
+ [  4   0   0  23   3   1   2   0 466   1]
+ [  1   2   0   0   0   1   0   0   3 493]]

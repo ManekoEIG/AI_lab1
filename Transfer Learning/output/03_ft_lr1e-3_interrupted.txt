@@ -1,0 +1,6 @@
+Unfrozen: top2 | lr=0.001 | epochs=4
+Total params: 3,168,550 | trainable: 3,168,550
+val_acc before fine-tuning: 0.9564
+epoch  1  train_loss 0.2068  train_acc 0.9378  val_loss 0.0988  val_acc 0.9685  (246s)
+epoch  2  train_loss 1.0422  train_acc 0.7665  val_loss 0.5416  val_acc 0.7988  (629s)
+epoch  3  train_loss 0.2898  train_acc 0.9018  val_loss 0.1661  val_acc 0.9479  (1186s)
